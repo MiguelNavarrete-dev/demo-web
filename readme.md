@@ -5,7 +5,7 @@
 El objetivo de esta demo es demostrar habilidades de desarrollo frontend, creando una interfaz limpia (Soft UI), amigable y optimizada para la conversión de clientes.
 
 ## 🚀 Vista Previa
-Puedes ver la demo en vivo aquí: [LINK_DE_TU_VERCEL_O_GITHUB_PAGES]
+Puedes ver la demo en vivo aquí: [https://patitas-felices-hazel.vercel.app/]
 
 ## ✨ Características
 * **Diseño Soft UI:** Uso de una paleta de colores pasteles (Blanco hueso, Celeste, Coral y Turquesa) para transmitir confianza y calma.
