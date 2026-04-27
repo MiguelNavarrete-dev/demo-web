@@ -1,0 +1,228 @@
+/*Global*/
+:root {
+    --color-principal: #3db2b2; /* El turquesa del logo */
+    --color-secundario: #ff6b6b; /* Un coral para destacar */
+    --color-whatsapp: #25D366; /* Verde de WhatsApp */
+    --color-instagram: #E1306C; /* Rosa de Instagram */
+    --bg-color: #f8f9fa; /* Un blanco grisáceo para el fondo */
+    --fuente-amigable: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color); /* Es un blanco grisáceo muy elegante */
+    margin: 0;
+    padding: 0;
+}
+
+/*navbar*/
+.navbar {
+    background-color: #aad6ec !important;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    padding: 10px 20px;
+}
+
+nav img{
+    height: 60px; /* Ajusta según tu imagen */
+}
+
+.buttondesing{
+    background-color: var(--color-principal) !important;
+    border-color: var(--color-principal) !important;
+    border-radius: 50px; /* Bordes redondeados para que sea amigable */
+    padding: 10px 25px;
+    color: #fff !important;
+    text-decoration: none; /* Elimina el subrayado */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    margin-left: 12px;
+}
+
+/*Sobre nosotros button*/
+.buttonsobrenosotros{
+    background-color: var(--color-secundario) !important;
+    border-color: var(--color-secundario) !important;
+    border-radius: 50px; /* Bordes redondeados para que sea amigable */
+    padding: 25px 84px;
+    color: #fff !important;
+    text-decoration: none; /* Elimina el subrayado */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+
+.prueba{
+    margin-top: 76px;
+    text-align: center;
+}
+
+.buttondesing:hover, .buttonsobrenosotros:hover {
+    background-color: #2a7a7a !important;
+    transform: scale(1.05);
+}
+
+/*hero*/
+.hero-section {
+    height: 85vh; /* Ocupa el 85% de la pantalla del usuario */
+    min-height: 500px;
+    display: flex;
+    
+    /* IMAGEN DE FONDO */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('../img/PerroBaño.webp') no-repeat center center;
+    background-size: cover;
+    background-attachment: scroll; /* Cambia a 'fixed' si quieres efecto parallax */
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content h1{
+    color: #ffffff !important;
+    font-weight: 800;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    color: #f8f9fa !important; /* Un blanco casi puro */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Esto les da el aire necesario */
+    align-items: center;
+}
+
+/*Agendar cita*/
+#agendar{
+    background-color: var(--color-whatsapp) !important;
+    border-color: var(--color-whatsapp) !important;
+}
+
+.btn-primary {
+    background-color: var(--color-principal) !important;
+    border-color: var(--color-principal) !important;
+    border-radius: 50px; /* Bordes redondeados para que sea amigable */
+    padding: 10px 25px;
+}
+
+.btn-primary:hover {
+    background-color: #2a7a7a !important;
+    transform: scale(1.05);
+}
+
+/*Servicios*/
+.card{
+    margin-top: 16px;
+    border-radius: 25px;
+    background-color: var(--color-secundario) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hace que el movimiento sea suave */
+    border: none; /* Opcional: quita el borde para que se vea más moderna */
+}
+
+.card:hover {
+    transform: translateY(-15px); /* La mueve 15 pixeles hacia arriba */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important; /* Añade una sombra más profunda */
+}
+
+.card img {
+    height: 250px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+/*Sobre nosotros*/
+#imgdueña{
+    width: 94%;
+    border-radius: 25px;
+}
+
+.title{
+    font-family: var(--fuente-amigable);
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 700;
+}
+
+#textsobrenosotros{
+    text-align: justify; 
+    text-justify: inter-word;
+}
+
+/*Ubicación*/
+#textubicacion{
+    text-align: justify; 
+    text-justify: inter-word;
+}
+
+/*Footer*/
+footer{
+    background-color: var(--color-principal) !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 25px;
+    margin-top: 50px;
+}
+
+.logofooter{
+    height: 130px;
+}
+
+#footerdesingb{
+    background-color: var(--color-instagram) !important;
+    border-color: var(--color-instagram) !important;
+}
+
+#buttondesingf{
+    background-color: var(--color-secundario) !important;
+    border-color: var(--color-secundario) !important;
+}
+
+/*Botones flotantes*/
+.contenedor-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column; /* Los pone uno arriba del otro */
+    gap: 10px;              /* Espacio entre ellos */
+    z-index: 1000;
+}
+
+.btn-ig{
+    background-color: var(--color-instagram) !important;
+    border-color: var(--color-instagram) !important;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.btn-ig:hover {
+    background-color: #c1275b !important;
+    transform: scale(1.1);
+}
+
+.btn-ws{
+    background-color: var(--color-whatsapp) !important;
+    border-color: var(--color-whatsapp) !important;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.btn-ws:hover {
+    background-color: #1ebea5 !important;
+    transform: scale(1.1);
+}
